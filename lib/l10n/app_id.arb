@@ -1,0 +1,1916 @@
+{
+  "@@locale": "id",
+  "@@author": "Lu Shueh Chou",
+  "settingTab": "Pengaturan",
+  "settingVersion": "Versi: {version}",
+  "@settingVersion": {
+    "description": "Menampilkan versi aplikasi",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settingWelcome": "Halo, {name}",
+  "@settingWelcome": {
+    "description": "Menampilkan nama pengguna",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingLogoutBtn": "Keluar",
+  "settingElfTitle": "Saran",
+  "settingElfDescription": "Gunakan formulir Google untuk memberikan masukan",
+  "settingElfContent": "Ada yang kurang?\nSelamat [berikan saran](https://forms.gle/R1vZDk9ztQLScUdb9).\nLihat juga [fitur yang sedang dikerjakan](https://github.com/evan361425/flutter-pos-system/milestones).",
+  "settingFeatureTitle": "Pengaturan Lainnya",
+  "settingFeatureDescription": "Tampilan, Bahasa, Notifikasi",
+  "settingThemeTitle": "Palet Warna",
+  "settingThemeName": "{name, select, dark{Mode Gelap} light{Mode Terang} system{Ikuti Sistem} other{UNKNOWN}}",
+  "@settingThemeName": {
+    "description": "Tampilan aplikasi",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingLanguageTitle": "Bahasa",
+  "settingCheckoutWarningTitle": "Peringatan Kasir",
+  "settingCheckoutWarningName": "{name, select, showAll{Tampilkan Semua} onlyNotEnough{Hanya Saat Kurang} hideAll{Sembunyikan Semua} other{UNKNOWN}}",
+  "@settingCheckoutWarningName": {
+    "description": "Menampilkan peringatan kasir",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingCheckoutWarningTip": "{name, select, showAll{Menampilkan peringatan saat menggunakan uang kecil.\\nContoh: uang 5 ribu habis, menggunakan 5 uang 1 ribu.} onlyNotEnough{Menampilkan peringatan saat uang kembalian tidak cukup.} hideAll{Tidak menampilkan peringatan kasir saat memesan.} other{UNKNOWN}}",
+  "@settingCheckoutWarningTip": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingOrderAwakeningTitle": "Jaga Layar Tetap Menyala Saat Memesan",
+  "@settingOrderAwakeningTitle": {
+    "description": "Menjaga layar tetap menyala saat memesan, meskipun tidak ada aktivitas"
+  },
+  "settingOrderAwakeningDescription": "Jika dimatikan, layar akan mati sesuai pengaturan sistem",
+  "settingReportTitle": "Kumpulkan Pesan Error dan Event",
+  "settingReportDescription": "Saat aplikasi error, kirim pesan error untuk membantu pengembangan aplikasi",
+  "stockTab": "Stok",
+  "stockUpdatedAt": "Terakhir restok: {updatedAt}",
+  "@stockUpdatedAt": {
+    "placeholders": {
+      "updatedAt": {
+        "type": "DateTime",
+        "format": "MMMEd"
+      }
+    }
+  },
+  "stockIngredientEmptyBody": "Setelah menambahkan bahan, Anda dapat mulai melacak stok bahan-bahan ini!",
+  "stockIngredientTitleCreate": "Tambah Bahan",
+  "stockIngredientTitleUpdate": "Edit Bahan",
+  "stockIngredientTitleUpdateAmount": "Edit Stok",
+  "stockIngredientTutorialTitle": "Tambah Bahan",
+  "stockIngredientTutorialContent": "Bahan membantu kami memverifikasi stok produk.\\nAnda dapat mengatur bahan di 'Produk', lalu mengatur stok di sini.",
+  "stockIngredientDialogDeletionContent": "{count, plural, =0{Saat ini tidak ada produk dengan bahan ini} other{Akan menghapus bahan dari {count} produk}}",
+  "@stockIngredientDialogDeletionContent": {
+    "description": "Menunjukkan berapa banyak produk yang akan terpengaruh saat menghapus bahan",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "stockIngredientProductsCount": "Ada {count} produk yang menggunakan bahan ini",
+  "@stockIngredientProductsCount": {
+    "description": "Saat mengedit bahan, menunjukkan berapa banyak produk yang menggunakannya",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "Jumlah produk"
+      }
+    }
+  },
+  "stockIngredientNameLabel": "Nama Bahan",
+  "stockIngredientNameHint": "Contoh: Keju",
+  "stockIngredientNameErrorRepeat": "Nama bahan sudah ada",
+  "stockIngredientAmountLabel": "Stok Saat Ini",
+  "stockIngredientAmountMaxLabel": "Stok Maksimum",
+  "stockIngredientAmountMaxHelper": "Mengatur nilai ini membantu Anda melihat berapa banyak bahan yang digunakan.\\nKosongkan maka akan otomatis diatur saat menambah stok.",
+  "stockIngredientRestockTitle": "Setiap kali restok, berapa banyak bahan yang di-restok.\\nContoh, setiap 30 porsi keju seharga Rp100.000, 'Unit Restok' diisi 30, 'Harga Unit' diisi 100000.\\n\\nIni membantu Anda restok dengan cepat berdasarkan harga.",
+  "stockIngredientRestockPriceLabel": "Harga Unit",
+  "stockIngredientRestockQuantityLabel": "Unit Restok",
+  "stockIngredientRestockDialogTitle": "Saat ini setiap {quantity} unit berharga {price}",
+  "@stockIngredientRestockDialogTitle": {
+    "description": "Judul dialog untuk mengatur harga restok",
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "stockIngredientRestockDialogSubtitle": "Masukkan harga pembelian",
+  "@stockIngredientRestockDialogSubtitle": {
+    "description": "Teks bantuan untuk mengingatkan pengguna memasukkan harga pembelian"
+  },
+  "stockIngredientRestockDialogQuantityTab": "Jumlah",
+  "stockIngredientRestockDialogQuantityBtn": "Gunakan Jumlah",
+  "stockIngredientRestockDialogQuantityLabel": "Stok Saat Ini",
+  "stockIngredientRestockDialogQuantityHelper": "Jika tidak mengatur stok maksimum, menambah nilai ini akan mengatur ulang stok maksimum.",
+  "@stockIngredientRestockDialogQuantityHelper": {
+    "description": "Teks bantuan untuk meningkatkan stok dengan cepat"
+  },
+  "stockIngredientRestockDialogPriceTab": "Harga",
+  "stockIngredientRestockDialogPriceBtn": "Gunakan Harga",
+  "stockIngredientRestockDialogPriceLabel": "Harga Restok",
+  "stockIngredientRestockDialogPriceEmptyBody": "Segera atur harga unit agar Anda dapat menghitung jumlah restok berdasarkan total pembayaran.",
+  "stockIngredientRestockDialogPriceOldAmount": "Stok Awal",
+  "@stockIngredientRestockDialogPriceOldAmount": {
+    "description": "Jumlah stok sebelum restok"
+  },
+  "stockReplenishmentButton": "Pembelian",
+  "stockReplenishmentEmptyBody": "Pembelian membantu Anda menyesuaikan stok bahan dengan cepat",
+  "stockReplenishmentTitleList": "Daftar Pembelian",
+  "stockReplenishmentTitleCreate": "Tambah Pembelian",
+  "stockReplenishmentTitleUpdate": "Edit Pembelian",
+  "stockReplenishmentMetaAffect": "Mempengaruhi {count} bahan",
+  "@stockReplenishmentMetaAffect": {
+    "description": "Menunjukkan dalam daftar pembelian berapa banyak bahan yang terpengaruh",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "stockReplenishmentNever": "Belum pernah melakukan pembelian",
+  "@stockReplenishmentNever": {
+    "description": "Halaman stok menampilkan waktu pembelian terakhir"
+  },
+  "stockReplenishmentApplyPreview": "Pratinjau",
+  "stockReplenishmentApplyConfirmButton": "Terapkan",
+  "stockReplenishmentApplyConfirmTitle": "Terapkan Pembelian?",
+  "stockReplenishmentApplyConfirmColumn": "{value, select, name{Nama} amount{Jumlah} other{UNKNOWN}}",
+  "@stockReplenishmentApplyConfirmColumn": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "stockReplenishmentApplyConfirmHint": "Setelah diterapkan, akan mempengaruhi stok bahan berikut",
+  "stockReplenishmentTutorialTitle": "Pembelian Bahan",
+  "stockReplenishmentTutorialContent": "Dengan pembelian, Anda tidak perlu mengatur stok satu per satu.\\nSegera atur pembelian dan sesuaikan banyak bahan sekaligus!",
+  "stockReplenishmentNameLabel": "Nama Pembelian",
+  "stockReplenishmentNameHint": "Contoh: Belanja di Pasar",
+  "stockReplenishmentNameErrorRepeat": "Nama pembelian sudah ada",
+  "stockReplenishmentIngredientsDivider": "Bahan",
+  "stockReplenishmentIngredientsHelper": "Klik untuk mengatur jumlah pembelian setiap bahan",
+  "stockReplenishmentIngredientAmountHint": "Atur jumlah yang ingin ditambah/dikurangi",
+  "stockQuantityTitle": "Takaran",
+  "stockQuantityDescription": "Setengah manis, sedikit manis, dll.",
+  "stockQuantityTitleCreate": "Tambah Takaran",
+  "stockQuantityTitleUpdate": "Edit Takaran",
+  "stockQuantityEmptyBody": "Takaran membantu menyesuaikan jumlah bahan dengan cepat, contoh:\\nSetengah manis, sedikit manis.",
+  "stockQuantityMetaProportion": "Proporsi Default: {proportion}",
+  "@stockQuantityMetaProportion": {
+    "description": "Teks penjelasan proporsi default",
+    "placeholders": {
+      "proportion": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "stockQuantityDialogDeletionContent": "{count, plural, =0{Saat ini tidak ada produk dengan takaran ini} other{Akan menghapus takaran dari {count} produk}}",
+  "@stockQuantityDialogDeletionContent": {
+    "description": "Menunjukkan berapa banyak produk yang terpengaruh saat menghapus takaran",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "stockQuantityNameLabel": "Nama Takaran",
+  "stockQuantityNameHint": "Contoh: Sedikit atau Banyak",
+  "stockQuantityNameErrorRepeat": "Nama takaran sudah ada",
+  "stockQuantityProportionLabel": "Proporsi Default",
+  "stockQuantityProportionHelper": "Saat produk menggunakan takaran ini, proporsi default untuk menyesuaikan jumlah bahan.\\n\\nContoh: Takaran 'Banyak' memiliki proporsi '1.5',\\nProduk 'Burger Keju' dengan bahan 'Keju' menggunakan '2' unit keju,\\nSaat memilih takaran 'Banyak', secara otomatis bahan 'Keju' menjadi '3' (2 * 1.5).\\n\\nJika diatur ke '1' tidak ada pengaruh.\\nJika diatur ke '0' berarti tidak menggunakan bahan ini.",
+  "printerTitle": "Manajemen Printer",
+  "printerDescription": "Koneksi Bluetooth, Pengaturan Cetak",
+  "printerHeaderInfo": "Printer",
+  "@printerHeaderInfo": {
+    "description": "Ditampilkan di bagian atas tampilan mobile"
+  },
+  "printerTitleCreate": "Tambah Printer",
+  "printerTitleUpdate": "Edit Printer",
+  "printerTitleSettings": "Pengaturan Format",
+  "printerBtnConnect": "Hubungkan",
+  "printerBtnDisconnect": "Putuskan",
+  "printerBtnTestPrint": "Cetak Uji",
+  "printerBtnRetry": "Coba Lagi",
+  "printerBtnPrint": "Cetak",
+  "printerStatusSuccess": "Berhasil terhubung ke printer",
+  "printerStatusConnecting": "Menghubungkan",
+  "printerStatusStandby": "Belum terhubung",
+  "printerStatusPrinted": "Cetak Selesai",
+  "printerStatusName": "{name, select, good{Normal} writeFailed{Gagal Cetak Sebelumnya} unrecoverable{Error, Mulai Ulang} paperJams{Printer Macet} paperNotFound{Kertas Habis} tooHot{Printer Panas} lowBattery{Baterai Lemah} uncovering{Tutup Terbuka} noResponse{Tidak Merespon} printing{Mencetak} unknown{Tidak Diketahui} other{UNKNOWN}}",
+  "printerSignalName": "{name, select, good{Baik} normal{Normal} weak{Lemah} other{UNKNOWN}}",
+  "printerScanIng": "Mencari perangkat Bluetooth...",
+  "printerScanCount": "Menemukan {count} perangkat",
+  "@printerScanCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compactLong"
+      }
+    }
+  },
+  "printerScanRetry": "Cari Ulang",
+  "printerScanNotFound": "Tidak menemukan perangkat?",
+  "printerErrorNotSelect": "Belum memilih perangkat",
+  "printerErrorNotSupportTitle": "Perangkat Tidak Kompatibel",
+  "printerErrorNotSupportContent": "Perangkat ini belum didukung. Anda dapat [menghubungi kami](mailto:evanlu361425@gmail.com) untuk bantuan.",
+  "printerErrorBluetoothOff": "Bluetooth belum diaktifkan",
+  "printerErrorDisconnected": "Printer terputus",
+  "printerErrorTimeout": "Koneksi printer timeout",
+  "printerErrorCanceled": "Permintaan koneksi printer dibatalkan",
+  "printerErrorTimeoutMore": "Coba langkah berikut:\\n• Pastikan perangkat menyala (biasanya berkedip)\\n• Pastikan perangkat dalam jangkauan\\n• Nyalakan ulang Bluetooth",
+  "printerNameLabel": "Nama Printer",
+  "printerNameHint": "Contoh: Printer Dapur",
+  "printerNameHelper": "Alamat: {address}",
+  "@printerNameHelper": {
+    "placeholders": {
+      "address": {
+        "type": "String"
+      }
+    }
+  },
+  "printerAutoConnLabel": "Koneksi Otomatis",
+  "printerAutoConnHelper": "Hubungkan otomatis saat masuk halaman pesanan",
+  "printerTypeSelectTitle": "Pilih Model Printer",
+  "printerTypeSelectHint": "Saat ini hanya mendukung model printer berikut.",
+  "printerTypeSelectFooter": "Dukungan untuk printer Epson sedang dikembangkan. Jika membutuhkan model lain, hubungi [kami](mailto:evanlu361425@gmail.com).",
+  "printerTypeSelectLabel": "Model Printer",
+  "printerTypeSelectName": "{name, select, catPrinter{Printer Pocket Mini} catPrinter2{Printer Pocket Mini 2} xPrinter58{Xprinter 58 Series} xPrinter76{Xprinter 76 Series} xPrinter80{Xprinter 80 Series} other{UNKNOWN}}",
+  "printerMetaConnected": "Terhubung",
+  "printerMetaExist": "Sudah ada, tidak dapat menambah",
+  "printerMetaHelper": "Nyalakan Bluetooth dan pastikan printer berada di dekat Anda",
+  "printerSettingsTitle": "Pengaturan Format Printer",
+  "printerSettingsPaddingLabel": "Jarak Sempit",
+  "printerSettingsPaddingHelper": "Mengurangi jarak antar struk, menghemat kertas, tapi hati-hati saat merobek",
+  "printerSettingsMore": "Pengaturan lainnya, segera hadir!",
+  "printerReceiptTitle": "Detail Transaksi",
+  "printerReceiptColumnName": "Item",
+  "printerReceiptColumnPrice": "Harga",
+  "printerReceiptColumnCount": "Jumlah",
+  "printerReceiptColumnTotal": "Subtotal",
+  "printerReceiptColumnTime": "Waktu",
+  "printerReceiptDiscountLabel": "Diskon",
+  "printerReceiptDiscountOrigin": "Harga Asli",
+  "printerReceiptAddOnsLabel": "Tambahan",
+  "printerReceiptAddOnsAdjustment": "Penyesuaian",
+  "printerReceiptTotal": "Total",
+  "printerReceiptPaid": "Dibayar",
+  "printerReceiptPrice": "Total",
+  "printerReceiptChange": "Kembalian",
+  "printerInfoTitle": "Informasi Printer",
+  "printerInfoName": "Nama",
+  "printerInfoAddress": "Alamat",
+  "printerInfoSignal": "Kekuatan Sinyal",
+  "printerInfoStatus": "Status",
+  "printerSupportedTitle": "Printer yang Didukung",
+  "printerSupportedName": "{name, select, xPrinter58{Xprinter XPrinter} catPrinter{Printer Pocket Mini} other{UNKNOWN}}",
+  "transitTitle": "Transfer Data",
+  "transitDescription": "Impor, ekspor informasi toko dan pesanan",
+  "transitDescriptionCsv": "Daftar yang dipisahkan koma, ekspor dan impor data ringan, kompatibel dengan hampir semua perangkat lunak.",
+  "transitDescriptionExcel": "Excel dapat diekspor dan diimpor secara offline, mudah diintegrasikan dengan Google Sheets dan Microsoft Excel.",
+  "transitDescriptionGoogleSheet": "Google Sheets adalah database kecil yang kuat, setelah diekspor dapat dianalisis secara khusus!",
+  "transitDescriptionPlainText": "Periksa cepat, bagikan cepat.",
+  "transitMethodTitle": "Pilih metode transfer",
+  "transitMethodName": "{name, select, googleSheet{Google Sheets} plainText{Teks Biasa} excel{File Excel} csv{File CSV} other{UNKNOWN}}",
+  "transitCatalogTitle": "Gunakan {name} untuk apa?",
+  "transitCatalogName": "{name, select, exportOrder{Ekspor Riwayat Pesanan} exportModel{Ekspor Info Toko} importModel{Impor Info Toko} other{UNKNOWN}}",
+  "transitCatalogHelper": "{name, select, exportOrder{Informasi pesanan dapat diekspor ke pihak ketiga untuk analisis statistik lebih detail.} exportModel{Informasi toko digunakan untuk mencadangkan menu, stok, dll. ke pihak ketiga.} importModel{Sinkronkan informasi ke perangkat ini.} other{UNKNOWN}}",
+  "transitModelName": "{name, select, menu{Menu} stock{Stok} quantities{Takaran} replenisher{Pembelian} orderAttr{Pengaturan Pelanggan} other{UNKNOWN}}",
+  "transitOrderName": "{name, select, basic{Pesanan} attr{Detail Pelanggan} product{Detail Produk} ingredient{Detail Bahan} other{UNKNOWN}}",
+  "transitOrderSettingTitle": "Pengaturan Ekspor Pesanan",
+  "transitOrderSettingMetaOverwrite": "{value, select, true{Akan timpa} false{Tidak akan timpa} other{UNKNOWN}}",
+  "@transitOrderSettingMetaOverwrite": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "transitOrderSettingMetaTitlePrefix": "{value, select, true{Dengan awalan tanggal} false{Tanpa awalan tanggal} other{UNKNOWN}}",
+  "@transitOrderSettingMetaTitlePrefix": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "transitOrderSettingOverwriteLabel": "Timpa lembar kerja?",
+  "transitOrderSettingOverwriteHint": "Setelah menimpa, akan mulai mengekspor dari baris pertama",
+  "transitOrderSettingTitlePrefixLabel": "Tambahkan awalan tanggal",
+  "transitOrderSettingTitlePrefixHint": "Menambahkan awalan tanggal pada nama lembar kerja, contoh: '0101 - 0131 Data Pesanan'",
+  "transitOrderSettingRecommendCombination": "Saat menggunakan mode tambah (tidak timpa), sebaiknya nama lembar kerja 'tidak' menggunakan awalan tanggal",
+  "transitOrderMetaRange": "Pesanan {range}",
+  "@transitOrderMetaRange": {
+    "placeholders": {
+      "range": {
+        "type": "String",
+        "example": "01/01 - 01/31"
+      }
+    }
+  },
+  "transitOrderMetaRangeDays": "Data {days} hari",
+  "@transitOrderMetaRangeDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "transitOrderCapacityTitle": "Perkiraan kapasitas: {size}",
+  "transitOrderCapacityContent": "Kapasitas terlalu tinggi dapat menyebabkan error. Sebaiknya ekspor bertahap, jangan terlalu banyak sekaligus.",
+  "transitOrderCapacityOk": "Kapasitas aman",
+  "transitOrderCapacityWarn": "Peringatan kapasitas",
+  "transitOrderCapacityDanger": "Kapasitas berbahaya",
+  "transitOrderItemMetaProductCount": "Jumlah pesanan: {count}",
+  "@transitOrderItemMetaProductCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitOrderItemMetaPrice": "Total harga: {price}",
+  "@transitOrderItemMetaPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "transitOrderItemDialogTitle": "Detail Pesanan",
+  "transitExportTab": "Ekspor",
+  "transitExportFileDialogTitle": "Pilih lokasi ekspor",
+  "transitExportBasicBtnCsv": "Ekspor ke CSV",
+  "transitExportBasicBtnExcel": "Ekspor ke Excel",
+  "transitExportBasicBtnGoogleSheet": "Ekspor ke Google Sheets",
+  "transitExportBasicBtnPlainText": "Salin Teks",
+  "transitExportBasicFileName": "Data POS System",
+  "transitExportBasicSuccessCsv": "Ekspor berhasil",
+  "transitExportBasicSuccessExcel": "Ekspor berhasil",
+  "transitExportBasicSuccessGoogleSheet": "Unggah berhasil",
+  "transitExportBasicSuccessPlainText": "Salin berhasil",
+  "transitExportBasicSuccessActionGoogleSheet": "Buka lembar kerja",
+  "transitExportOrderTitleCsv": "Ekspor ke CSV",
+  "transitExportOrderTitleExcel": "Ekspor ke Excel",
+  "transitExportOrderTitleGoogleSheet": "Ekspor ke Google Sheets",
+  "transitExportOrderTitlePlainText": "Salin Teks",
+  "transitExportOrderSubtitleCsv": "Akan ada beberapa file, setiap file berisi data berbeda",
+  "transitExportOrderSubtitleExcel": "Satu file dengan beberapa lembar kerja, setiap lembar berisi data berbeda",
+  "transitExportOrderSubtitleGoogleSheet": "Unggah memerlukan koneksi internet, dan permintaan mungkin dibatasi oleh Google.\\nJika unggah gagal, coba lagi nanti atau gunakan metode lain.",
+  "transitExportOrderSubtitlePlainText": "Cocok untuk berbagi sederhana atau memeriksa data",
+  "transitExportOrderFileName": "Data Pesanan",
+  "transitExportOrderProgressGoogleSheetOverwrite": "Menimpa data",
+  "transitExportOrderProgressGoogleSheetAppend": "Menambahkan data",
+  "transitExportOrderWarningMemoryGoogleSheet": "Kapasitas di sini adalah konsumsi transfer jaringan, penggunaan memori cloud sebenarnya mungkin hanya seperseratus dari nilai ini.\\nPenjelasan batasan kapasitas selengkapnya lihat [dokumen ini](https://developers.google.com/sheets/api/limits#quota).\\n",
+  "transitExportOrderSuccessCsv": "Ekspor berhasil",
+  "transitExportOrderSuccessExcel": "Ekspor berhasil",
+  "transitExportOrderSuccessGoogleSheet": "Unggah berhasil",
+  "transitExportOrderSuccessPlainText": "Salin berhasil",
+  "transitExportOrderSuccessActionGoogleSheet": "Buka lembar kerja",
+  "transitImportTab": "Impor",
+  "transitImportBtnCsv": "Pilih file .csv",
+  "transitImportBtnExcel": "Pilih file .xlsx",
+  "transitImportBtnGoogleSheet": "Pilih Google Sheets",
+  "transitImportBtnPlainTextAction": "Klik untuk tempel teks",
+  "transitImportBtnPlainTextHint": "Tempel teks yang telah disalin",
+  "transitImportBtnPlainTextHelper": "Setelah menempel teks, sistem akan menganalisis dan menentukan jenis informasi yang diimpor.\\nMenempel teks yang terlalu besar dapat menyebabkan sistem crash.\\n",
+  "transitImportModelSelectionLabel": "Jenis Data",
+  "transitImportModelSelectionAll": "Semua",
+  "transitImportModelSelectionHint": "Pilih jenis data terlebih dahulu untuk mengimpor",
+  "transitImportModelSelectionPlainTextHint": "Masukkan teks terlebih dahulu untuk mengimpor",
+  "transitImportProgressGoogleSheetStart": "Mengambil data spreadsheet",
+  "transitImportProgressGoogleSheetPrepare": "Mendapatkan informasi spreadsheet",
+  "transitImportErrorBasicColumnCount": "Data tidak cukup, memerlukan {columns} kolom",
+  "@transitImportErrorBasicColumnCount": {
+    "placeholders": {
+      "columns": {
+        "type": "int"
+      }
+    }
+  },
+  "transitImportErrorBasicDuplicate": "Baris ini akan diabaikan, item yang sama sudah muncul sebelumnya",
+  "transitImportErrorCsvPickFile": "Gagal memilih file",
+  "transitImportErrorExcelPickFile": "Gagal memilih file",
+  "transitImportErrorGoogleSheetFetchDataTitle": "Tidak dapat mengambil data spreadsheet",
+  "transitImportErrorGoogleSheetFetchDataHelper": "Jangan khawatir, biasanya bisa diatasi dengan mudah!\\nKemungkinan penyebab:\\n• Koneksi jaringan tidak stabil;\\n• Belum memberi izin POS System untuk membaca spreadsheet;\\n• ID spreadsheet salah, coba salin seluruh URL;\\n• Spreadsheet telah dihapus.",
+  "transitImportErrorGoogleSheetMissingTitle": "Tidak menemukan data lembar kerja {name}",
+  "transitImportErrorGoogleSheetMissingHelper": "Jangan khawatir, biasanya bisa diatasi dengan mudah!\\nKemungkinan penyebab:\\n• Spreadsheet tidak memiliki lembar kerja yang diinginkan;\\n• Koneksi jaringan tidak stabil;\\n• Belum memberi izin POS System untuk membaca spreadsheet;\\n• ID spreadsheet salah, coba salin seluruh URL;\\n• Spreadsheet telah dihapus.",
+  "transitImportErrorPreviewNotFound": "Tidak menemukan data '{name}'",
+  "transitImportErrorPlainTextNotFound": "Teks ini tidak cocok dengan layanan yang tersedia, lihat konten teks saat ekspor.",
+  "transitImportSuccess": "Impor berhasil",
+  "transitImportPreviewConfirmTitle": "Yakin ingin mengimpor?",
+  "transitImportPreviewConfirmContent": "Perhatian: Setelah impor, data yang tidak tercantum akan dihapus. Pastikan untuk melanjutkan!",
+  "transitImportPreviewConfirmBtn": "Impor Data",
+  "transitImportPreviewConfirmVerify": "Konfirmasi Data",
+  "transitImportPreviewConfirmHint": "Masih ada {count} jenis data yang belum dikonfirmasi.\\nPastikan data sudah benar. Jika ada kesalahan, batalkan dan perbaiki sebelum mengimpor ulang.\\n",
+  "@transitImportPreviewConfirmHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitImportPreviewIngredientMetaAmount": "Stok: {amount}",
+  "@transitImportPreviewIngredientMetaAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "transitImportPreviewIngredientMetaMaxAmount": "{exist, plural, =0{Tidak diatur} other{Maks: {value}}}",
+  "@transitImportPreviewIngredientMetaMaxAmount": {
+    "placeholders": {
+      "exist": {
+        "type": "int"
+      },
+      "value": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "transitImportPreviewIngredientConfirm": "Perhatian: Setelah impor, untuk menghindari dampak pada 'Menu', bahan yang tidak tercantum tidak akan dihapus.",
+  "transitImportPreviewQuantityConfirm": "Perhatian: Setelah impor, untuk menghindari dampak pada 'Menu', takaran yang tidak tercantum tidak akan dihapus.",
+  "transitImportColumnStatus": "{name, select, normal{(Normal)} staged{(Baru)} stagedIng{(Bahan Baru)} stagedQua{(Takaran Baru)} updated{(Berubah)} other{UNKNOWN}}",
+  "@transitImportColumnStatus": {
+    "description": "Status tambahan dari data yang ditampilkan"
+  },
+  "transitFormatFieldProductIngredientTitle": "Informasi Bahan",
+  "transitFormatFieldProductIngredientNote": "Informasi semua bahan produk, format:\\n- Bahan1, Jumlah Default\\n  + Takaran a, Jumlah Tambahan, Harga Tambahan, Biaya Tambahan\\n  + Takaran b, Jumlah Tambahan, Harga Tambahan, Biaya Tambahan\\n- Bahan2, Jumlah Default",
+  "transitFormatFieldReplenishmentTitle": "Jumlah Pembelian",
+  "transitFormatFieldReplenishmentNote": "Jumlah bahan tertentu saat pembelian, format:\\n- Bahan1, Jumlah Pembelian\\n- Bahan2, Jumlah Pembelian",
+  "transitFormatFieldAttributeOptionTitle": "Opsi Pengaturan Pelanggan",
+  "transitFormatFieldAttributeOptionNote": "'Nilai Opsi' memiliki arti berbeda tergantung jenis pengaturan pelanggan, format:\\n- Opsi1, Apakah Default, Nilai Opsi\\n- Opsi2, Apakah Default, Nilai Opsi",
+  "transitFormatFieldOrderNo": "No",
+  "transitFormatFieldOrderTime": "Waktu",
+  "transitFormatFieldOrderPrice": "Total Harga",
+  "transitFormatFieldOrderProductPrice": "Total Produk",
+  "transitFormatFieldOrderPaid": "Dibayar",
+  "transitFormatFieldOrderCost": "Biaya",
+  "transitFormatFieldOrderProfit": "Pendapatan",
+  "transitFormatFieldOrderItemCount": "Jumlah Item",
+  "@transitFormatFieldOrderItemCount": {
+    "description": "berapa banyak item dalam pesanan"
+  },
+  "transitFormatFieldOrderTypeCount": "Jenis Produk",
+  "@transitFormatFieldOrderTypeCount": {
+    "description": "berapa banyak jenis produk dalam pesanan"
+  },
+  "transitFormatFieldOrderAttributeTitle": "Pengaturan Pelanggan Pesanan",
+  "transitFormatFieldOrderAttributeHeaderNo": "No",
+  "transitFormatFieldOrderAttributeHeaderName": "Kategori",
+  "transitFormatFieldOrderAttributeHeaderOption": "Opsi",
+  "transitFormatFieldOrderProductTitle": "Detail Produk Pesanan",
+  "transitFormatFieldOrderProductHeaderNo": "No",
+  "transitFormatFieldOrderProductHeaderName": "Produk",
+  "transitFormatFieldOrderProductHeaderCatalog": "Kategori",
+  "transitFormatFieldOrderProductHeaderCount": "Jumlah",
+  "transitFormatFieldOrderProductHeaderPrice": "Harga Satuan",
+  "transitFormatFieldOrderProductHeaderCost": "Biaya Satuan",
+  "transitFormatFieldOrderProductHeaderOrigin": "Harga Asli",
+  "transitFormatFieldOrderIngredientTitle": "Detail Bahan Pesanan",
+  "transitFormatFieldOrderIngredientHeaderNo": "No",
+  "transitFormatFieldOrderIngredientHeaderName": "Bahan",
+  "transitFormatFieldOrderIngredientHeaderQuantity": "Takaran",
+  "transitFormatFieldOrderIngredientHeaderAmount": "Jumlah",
+  "transitFormatFieldOrderExpandableHint": "Lihat detail di bawah",
+  "transitFormatTextOrderPrice": "{hasProducts, plural, =0{Total {price}.} other{Total {price}, dengan {productsPrice} dari produk.}}",
+  "@transitFormatTextOrderPrice": {
+    "placeholders": {
+      "hasProducts": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      },
+      "productsPrice": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderMoney": "Dibayar {paid}, biaya bahan {cost}.",
+  "@transitFormatTextOrderMoney": {
+    "placeholders": {
+      "paid": {
+        "type": "String"
+      },
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderProductCount": "{count, plural, =0{Tidak ada pesanan.} =1{Pesanan {count} item, berisi:\\n{products}.} other{Pesanan {count} item ({setCount} kombinasi) meliputi:\\n{products}.}}",
+  "@transitFormatTextOrderProductCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "setCount": {
+        "type": "int"
+      },
+      "products": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderProduct": "{hasIngredient, plural, =0{{product} ({catalog}) {count} pcs total {price}, tanpa bahan} other{{product} ({catalog}) {count} pcs total {price}, bahan: {ingredients}}}",
+  "@transitFormatTextOrderProduct": {
+    "placeholders": {
+      "hasIngredient": {
+        "type": "int"
+      },
+      "product": {
+        "type": "String"
+      },
+      "catalog": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      },
+      "ingredients": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderIngredient": "{amount, plural, =0{{ingredient} ({quantity})} other{{ingredient} ({quantity}), menggunakan {amount}}}",
+  "@transitFormatTextOrderIngredient": {
+    "description": "Detail bahan dan jumlah setiap produk dalam daftar pesanan",
+    "placeholders": {
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      },
+      "ingredient": {
+        "type": "String"
+      },
+      "quantity": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderNoQuantity": "Takaran Default",
+  "transitFormatTextOrderOrderAttribute": "Pelanggan: {options}",
+  "@transitFormatTextOrderOrderAttribute": {
+    "placeholders": {
+      "options": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOrderOrderAttributeItem": "{name} adalah {option}",
+  "@transitFormatTextOrderOrderAttributeItem": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "option": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuHeader": "Menu ini memiliki {catalogs} kategori produk, {products} produk.",
+  "@transitFormatTextMenuHeader": {
+    "placeholders": {
+      "catalogs": {
+        "type": "int"
+      },
+      "products": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextMenuHeaderPrefix": "Menu",
+  "@transitFormatTextMenuHeaderPrefix": {
+    "description": "Digunakan untuk memeriksa apakah teks ini adalah menu"
+  },
+  "transitFormatTextMenuCatalog": "Kategori ke-{index} bernama {catalog}, {details}.",
+  "@transitFormatTextMenuCatalog": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "catalog": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuCatalogDetails": "{count, plural, =0{Tidak ada produk} other{Ada {count} produk}}",
+  "@transitFormatTextMenuCatalogDetails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextMenuProduct": "Produk ke-{index} bernama {name}, harga {price}, biaya {cost}, {details}",
+  "@transitFormatTextMenuProduct": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      },
+      "cost": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuProductDetails": "{count, plural, =0{Tidak memiliki bahan.} other{Memiliki {count} bahan: {names}.\\nSetiap produk menggunakan {details}.}}",
+  "@transitFormatTextMenuProductDetails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "names": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuIngredient": "{amount} {name}, {details}",
+  "@transitFormatTextMenuIngredient": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuIngredientDetails": "{count, plural, =0{Tidak dapat menyesuaikan takaran} other{Memiliki {count} takaran berbeda: {quantities}}}",
+  "@transitFormatTextMenuIngredientDetails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "quantities": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextMenuQuantity": "Setiap produk menggunakan {amount} dan menyesuaikan harga jual {price} dan biaya {cost}",
+  "@transitFormatTextMenuQuantity": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      },
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextStockHeader": "Stok ini memiliki {count} jenis bahan.",
+  "@transitFormatTextStockHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextStockHeaderPrefix": "Stok",
+  "@transitFormatTextStockHeaderPrefix": {
+    "description": "Digunakan untuk memeriksa apakah teks ini adalah stok"
+  },
+  "transitFormatTextStockIngredient": "Bahan ke-{index} bernama {name}, stok {amount}{details}.",
+  "@transitFormatTextStockIngredient": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextStockIngredientMaxAmount": "{exist, plural, =0{} other{, maksimal {max}}}",
+  "@transitFormatTextStockIngredientMaxAmount": {
+    "description": "String(maks) digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "exist": {
+        "type": "int"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextStockIngredientRestockPrice": "{exist, plural, =0{} other{ dan setiap {quantity} unit berharga {price}}}",
+  "@transitFormatTextStockIngredientRestockPrice": {
+    "placeholders": {
+      "exist": {
+        "type": "int"
+      },
+      "quantity": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextQuantitiesHeader": "Mengatur {count} jenis takaran.",
+  "@transitFormatTextQuantitiesHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextQuantitiesHeaderSuffix": "jenis takaran.",
+  "@transitFormatTextQuantitiesHeaderSuffix": {
+    "description": "Digunakan untuk memeriksa apakah teks ini adalah takaran"
+  },
+  "transitFormatTextQuantitiesQuantity": "Takaran ke-{index} bernama {name}, secara default akan mengalikan jumlah bahan dengan {prop} kali.",
+  "@transitFormatTextQuantitiesQuantity": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "prop": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextReplenisherHeader": "Mengatur {count} jenis pembelian.",
+  "@transitFormatTextReplenisherHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextReplenisherHeaderSuffix": "jenis pembelian.",
+  "@transitFormatTextReplenisherHeaderSuffix": {
+    "description": "Digunakan untuk memeriksa apakah teks ini adalah pembelian"
+  },
+  "transitFormatTextReplenisherReplenishment": "Bahan ke-{index} bernama {name}, {details}.",
+  "@transitFormatTextReplenisherReplenishment": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextReplenisherReplenishmentDetails": "{count, plural, =0{Tidak menyesuaikan stok} other{Menyesuaikan stok {count} jenis bahan}}",
+  "@transitFormatTextReplenisherReplenishmentDetails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextOaHeader": "Mengatur {count} jenis atribut pelanggan.",
+  "@transitFormatTextOaHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextOaHeaderSuffix": "jenis atribut pelanggan.",
+  "@transitFormatTextOaHeaderSuffix": {
+    "description": "Digunakan untuk memeriksa apakah teks ini adalah pengaturan pelanggan"
+  },
+  "transitFormatTextOaOa": "Atribut ke-{index} bernama {name}, tipe {mode}, {details}.",
+  "@transitFormatTextOaOa": {
+    "description": "String digunakan agar regex dapat dimasukkan saat impor untuk mendapatkan informasi",
+    "placeholders": {
+      "index": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "mode": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "transitFormatTextOaOaDetails": "{count, plural, =0{Tidak memiliki opsi} other{Memiliki {count} opsi}}",
+  "@transitFormatTextOaOaDetails": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transitFormatTextOaDefaultOption": "Default",
+  "transitFormatTextOaModeValue": "Nilai opsi adalah {value}",
+  "@transitFormatTextOaModeValue": {
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "transitGoogleSheetDialogTitle": "Google Sheets",
+  "transitGoogleSheetDialogCreate": "Buat Spreadsheet Baru",
+  "transitGoogleSheetDialogSelectExist": "Pilih Spreadsheet yang Ada",
+  "transitGoogleSheetDialogConfirm": "Konfirmasi",
+  "transitGoogleSheetDialogIdLabel": "ID Spreadsheet atau URL",
+  "transitGoogleSheetDialogIdHelper": "ID Spreadsheet adalah kombinasi huruf, angka, garis bawah, dan tanda hubung dalam URL.\\nContoh, ID dari \\\"https://docs.google.com/spreadsheets/d/1a2b3c4d5e6f7g8h9i0j\\\" adalah \\\"1a2b3c4d5e6f7g8h9i0j\\\".\\nMenggunakan spreadsheet yang ada dapat menimpa data di lembar kerja yang dipilih.",
+  "transitGoogleSheetProgressCreate": "Membuat spreadsheet",
+  "transitGoogleSheetProgressFulfill": "Membuat lembar kerja di spreadsheet",
+  "transitGoogleSheetErrorCreateTitle": "Tidak dapat membuat spreadsheet",
+  "transitGoogleSheetErrorCreateHelper": "Jangan khawatir, biasanya bisa diatasi dengan mudah!\\nKemungkinan penyebab:\\n• Koneksi jaringan tidak stabil;\\n• Belum memberi izin POS System untuk mengedit spreadsheet.",
+  "transitGoogleSheetErrorFulfillTitle": "Tidak dapat membuat lembar kerja di spreadsheet",
+  "transitGoogleSheetErrorFulfillHelper": "Jangan khawatir, biasanya bisa diatasi dengan mudah!\\nKemungkinan penyebab:\\n• Koneksi jaringan tidak stabil;\\n• Belum memberi izin POS System untuk membuat lembar kerja;\\n• ID spreadsheet salah, coba salin seluruh URL;\\n• Spreadsheet telah dihapus.",
+  "transitGoogleSheetErrorIdNotFound": "Spreadsheet tidak ditemukan",
+  "transitGoogleSheetErrorIdNotFoundHelper": "Jangan khawatir, biasanya bisa diatasi dengan mudah!\\nKemungkinan penyebab:\\n• Koneksi jaringan tidak stabil;\\n• Belum memberi izin POS System untuk membaca spreadsheet;\\n• ID spreadsheet salah, coba salin seluruh URL;\\n• Spreadsheet telah dihapus.",
+  "transitGoogleSheetErrorIdEmpty": "ID tidak boleh kosong",
+  "transitGoogleSheetErrorIdInvalid": "ID tidak valid, harus berisi:\\n• /spreadsheets/d/<ID>/\\n• Atau langsung ID (kombinasi huruf+angka+garis bawah+tanda hubung)",
+  "transitGoogleSheetErrorNetwork": "Kesalahan jaringan, tidak dapat terhubung ke Google Sheets.",
+  "appTitle": "Sistem POS",
+  "actSuccess": "Berhasil",
+  "@actSuccess": {
+    "description": "Aksi berhasil dan ditampilkan di Snackbar."
+  },
+  "actError": "Kesalahan",
+  "@actError": {
+    "description": "Pesan error ditampilkan di Snackbar saat terjadi kesalahan."
+  },
+  "actMoreInfo": "Info",
+  "@actMoreInfo": {
+    "description": "Tombol di Snackbar untuk menampilkan detail."
+  },
+  "singleChoice": "Hanya bisa memilih satu",
+  "@singleChoice": {
+    "description": "Pengingat bahwa hanya satu opsi yang dapat dipilih."
+  },
+  "multiChoices": "Dapat memilih banyak",
+  "@multiChoices": {
+    "description": "Pengingat bahwa banyak opsi dapat dipilih."
+  },
+  "totalCount": "{count, plural, other{Total {count} item}}",
+  "@totalCount": {
+    "description": "Jumlah total ditampilkan di ListView.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compactLong"
+      }
+    }
+  },
+  "searchCount": "Menemukan {count} hasil",
+  "@searchCount": {
+    "description": "Jumlah total ditampilkan di SearchScaffold.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "title": "{name, select, analysis{Statistik} stock{Stok} cashier{Kasir} settings{Pengaturan} menu{Menu} printers{Printer} transit{Transfer Data} orderAttributes{Pengaturan Pelanggan} stockQuantities{Takaran} elf{Saran} more{Lainnya} debug{Debug} other{UNKNOWN}}",
+  "@title": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dialogDeletionTitle": "Konfirmasi Hapus",
+  "@dialogDeletionTitle": {
+    "description": "Judul ditampilkan di DeleteDialog."
+  },
+  "dialogDeletionContent": "Yakin ingin menghapus \"{name}\"?\\n\\n{more}Tindakan ini tidak dapat dibatalkan!",
+  "@dialogDeletionContent": {
+    "description": "Konten ditampilkan di DeleteDialog.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Roti Lapis Sayur"
+      },
+      "more": {
+        "type": "String",
+        "description": "Detail lebih lanjut tentang efek samping penghapusan"
+      }
+    }
+  },
+  "imageHolderCreate": "Klik untuk tambah gambar",
+  "imageHolderUpdate": "Klik untuk perbarui gambar",
+  "imageBtnCrop": "Potong",
+  "imageGalleryTitle": "Manajemen Gambar",
+  "imageGalleryEmpty": "Klik untuk mengimpor foto pertama Anda!",
+  "imageGalleryActionCreate": "Tambah Gambar",
+  "imageGalleryActionDelete": "Hapus",
+  "imageGallerySnackbarDeleteFailed": "Satu atau lebih gambar gagal dihapus.",
+  "imageGallerySelectionTitle": "Pilih Foto",
+  "imageGallerySelectionDeleteConfirm": "Akan menghapus {count} gambar\\nSetelah dihapus, produk terkait tidak dapat menampilkan gambar",
+  "@imageGallerySelectionDeleteConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "emptyBodyTitle": "Maaf! Masih kosong",
+  "@emptyBodyTitle": {
+    "description": "Teks ditampilkan di EmptyBody, memberi tahu pengguna belum ada item."
+  },
+  "emptyBodyAction": "Atur Sekarang",
+  "btnNavTo": "Lihat",
+  "@btnNavTo": {
+    "description": "Teks tombol untuk navigasi ke layar lain."
+  },
+  "btnSignInWithGoogle": "Masuk dengan Google",
+  "semanticsPercentileBar": "Saat ini {percent} dari total",
+  "@semanticsPercentileBar": {
+    "placeholders": {
+      "percent": {
+        "type": "num",
+        "format": "percentPattern"
+      }
+    }
+  },
+  "invalidIntegerType": "{field} harus bilangan bulat",
+  "@invalidIntegerType": {
+    "description": "Pesan peringatan saat input bukan bilangan bulat.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidNumberType": "{field} harus angka",
+  "@invalidNumberType": {
+    "description": "Pesan peringatan saat input bukan angka.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidNumberPositive": "{field} tidak boleh negatif",
+  "@invalidNumberPositive": {
+    "description": "Pesan peringatan saat input negatif.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidNumberMaximum": "{field} tidak boleh melebihi {maximum}",
+  "@invalidNumberMaximum": {
+    "description": "Pesan peringatan saat input melebihi nilai maksimum.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "maximum": {
+        "type": "num",
+        "description": "Nilai maksimum",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "invalidNumberMinimum": "{field} tidak boleh kurang dari {minimum}",
+  "@invalidNumberMinimum": {
+    "description": "Pesan peringatan saat input kurang dari nilai minimum.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "minimum": {
+        "type": "num",
+        "description": "Nilai minimum",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "invalidStringEmpty": "{field} tidak boleh kosong",
+  "@invalidStringEmpty": {
+    "description": "Pesan peringatan saat tidak ada teks yang dimasukkan.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidStringMaximum": "{field} tidak boleh melebihi {maximum} karakter",
+  "@invalidStringMaximum": {
+    "description": "Pesan peringatan saat input melebihi batas karakter maksimum.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "maximum": {
+        "type": "int",
+        "description": "Jumlah karakter maksimum"
+      }
+    }
+  },
+  "singleMonth": "Bulanan",
+  "@singleMonth": {
+    "description": "Salah satu unit untuk konversi periode kalender."
+  },
+  "singleWeek": "Mingguan",
+  "@singleWeek": {
+    "description": "Salah satu unit untuk konversi periode kalender."
+  },
+  "twoWeeks": "Dua Mingguan",
+  "@twoWeeks": {
+    "description": "Salah satu unit untuk konversi periode kalender."
+  },
+  "orderAttributeTitle": "Pengaturan Pelanggan",
+  "orderAttributeDescription": "Makan di tempat, dibawa pulang, dll. untuk analisis",
+  "orderAttributeTitleCreate": "Tambah Pengaturan Pelanggan",
+  "orderAttributeTitleUpdate": "Edit Pengaturan Pelanggan",
+  "orderAttributeTitleReorder": "Urutkan Pengaturan Pelanggan",
+  "orderAttributeEmptyBody": "Pengaturan pelanggan membantu statistik siapa yang datang, contoh:\\n20-30 tahun, Dibawa pulang, Karyawan kantoran.",
+  "orderAttributeHeaderInfo": "Pengaturan Pelanggan",
+  "@orderAttributeHeaderInfo": {
+    "description": "Ditampilkan di persegi panjang atas beranda"
+  },
+  "orderAttributeTutorialTitle": "Buat Pengaturan Pelanggan Anda",
+  "orderAttributeTutorialContent": "Di sini untuk mengatur informasi pelanggan, seperti: makan di tempat, dibawa pulang, karyawan, dll.\\nInformasi ini membantu statistik siapa yang datang, sehingga dapat membuat strategi bisnis yang lebih baik.",
+  "orderAttributeTutorialCreateExample": "Buat contoh untuk pengujian.",
+  "orderAttributeExampleAge": "Usia",
+  "orderAttributeExampleAgeChild": "Anak-anak",
+  "orderAttributeExampleAgeAdult": "Dewasa",
+  "orderAttributeExampleAgeSenior": "Lansia",
+  "orderAttributeExamplePlace": "Lokasi",
+  "orderAttributeExamplePlaceTakeout": "Dibawa Pulang",
+  "orderAttributeExamplePlaceDineIn": "Makan di Tempat",
+  "orderAttributeExampleEcoFriendly": "Ramah Lingkungan",
+  "orderAttributeExampleEcoFriendlyReusableBottle": "Botol Minum",
+  "orderAttributeExampleEcoFriendlyReusableBag": "Tas Belanja",
+  "orderAttributeMetaMode": "Jenis: {name}",
+  "@orderAttributeMetaMode": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeMetaDefault": "Default: {name}",
+  "@orderAttributeMetaDefault": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeMetaNoDefault": "Tidak ada default",
+  "orderAttributeModeDivider": "Jenis Pengaturan Pelanggan",
+  "orderAttributeModeName": "{name, select, statOnly{Umum} changePrice{Ubah Harga} changeDiscount{Diskon} other{UNKNOWN}}",
+  "@orderAttributeModeName": {
+    "description": "Nama mode pengaturan pelanggan"
+  },
+  "orderAttributeModeHelper": "{name, select, statOnly{Pengaturan umum, tidak mempengaruhi harga pesanan.} changePrice{Saat dipilih, dapat mempengaruhi harga.\\nContoh: Antar + Rp5.000, Botol Minum - Rp1.000.} changeDiscount{Saat dipilih, mempengaruhi total harga berdasarkan diskon.\\nContoh: Makan di tempat +10% biaya layanan, Harga teman -10%.} other{UNKNOWN}}",
+  "@orderAttributeModeHelper": {
+    "description": "Penjelasan kategori pengaturan pelanggan",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeNameLabel": "Nama Pengaturan Pelanggan",
+  "orderAttributeNameHint": "Contoh: Usia Pelanggan",
+  "orderAttributeNameErrorRepeat": "Nama tidak boleh sama",
+  "orderAttributeOptionTitleCreate": "Tambah Opsi",
+  "orderAttributeOptionTitleUpdate": "Edit Opsi",
+  "orderAttributeOptionTitleReorder": "Urutkan Opsi",
+  "orderAttributeOptionMetaDefault": "Default",
+  "orderAttributeOptionMetaOptionOf": "Opsi {name}",
+  "@orderAttributeOptionMetaOptionOf": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeOptionNameLabel": "Nama Opsi",
+  "orderAttributeOptionNameHelper": "Contoh untuk usia, opsi yang mungkin:\\n- ≤ 20\\n- 21-30",
+  "orderAttributeOptionNameErrorRepeat": "Nama tidak boleh sama",
+  "orderAttributeOptionModeTitle": "Mode Opsi",
+  "orderAttributeOptionModeHelper": "{name, select, statOnly{Karena pengaturan ini 'Umum', tidak perlu mengatur 'diskon' atau 'ubah harga'} changePrice{Saat memesan, memilih opsi ini akan menerapkan perubahan harga} changeDiscount{Saat memesan, memilih opsi ini akan menerapkan diskon} other{UNKNOWN}}",
+  "@orderAttributeOptionModeHelper": {
+    "description": "Penjelasan mode",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeOptionModeHint": "{name, select, statOnly{} changePrice{Contoh: -5000 berarti kurang Rp5.000} changeDiscount{Contoh: 80 berarti 'diskon 20%'} other{UNKNOWN}}",
+  "@orderAttributeOptionModeHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeOptionToDefaultLabel": "Jadikan Default",
+  "orderAttributeOptionToDefaultHelper": "Tetapkan opsi ini sebagai nilai default, setiap pesanan akan menggunakan opsi ini secara default.",
+  "orderAttributeOptionToDefaultConfirmChangeTitle": "Timpa opsi default?",
+  "orderAttributeOptionToDefaultConfirmChangeContent": "Tindakan ini akan membuat '{name}' menjadi non-default",
+  "@orderAttributeOptionToDefaultConfirmChangeContent": {
+    "description": "Konfirmasi bahwa pengguna tahu nilai default asli",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderAttributeValueEmpty": "Tidak mempengaruhi harga",
+  "orderAttributeValueFree": "Gratis",
+  "menuTitle": "Menu",
+  "menuSubtitle": "Kategori Produk, Produk",
+  "menuTutorialTitle": "Buat Menu Anda",
+  "menuTutorialContent": "Pertama, mari kita mulai membuat menu!",
+  "menuTutorialCreateExample": "Buat contoh menu untuk pengujian.",
+  "menuSearchHint": "Cari produk, bahan, takaran",
+  "menuSearchPrefix": "{name, select, ingredient{Bahan: } quantity{Takaran: } other{UNKNOWN}}",
+  "menuSearchNotFound": "Tidak menemukan informasi, mungkin salah ketik?",
+  "menuExampleCatalogBurger": "Burger",
+  "menuExampleCatalogDrink": "Minuman",
+  "menuExampleCatalogSide": "Camilan",
+  "menuExampleCatalogOther": "Lainnya",
+  "menuExampleProductCheeseBurger": "Burger Keju",
+  "menuExampleProductVeggieBurger": "Burger Sayur",
+  "menuExampleProductHamBurger": "Burger Ham",
+  "menuExampleProductCola": "Cola",
+  "menuExampleProductCoffee": "Kopi",
+  "menuExampleProductFries": "Kentang Goreng",
+  "menuExampleProductStraw": "Sedotan",
+  "menuExampleProductPlasticBag": "Kantong Plastik",
+  "menuExampleIngredientCheese": "Keju",
+  "menuExampleIngredientLettuce": "Selada",
+  "menuExampleIngredientTomato": "Tomat",
+  "menuExampleIngredientBun": "Roti Burger",
+  "menuExampleIngredientChili": "Saus Pedas",
+  "menuExampleIngredientHam": "Ham",
+  "menuExampleIngredientCola": "Cola",
+  "menuExampleIngredientCoffee": "Kopi Sachet",
+  "menuExampleIngredientFries": "Kentang Goreng",
+  "menuExampleIngredientStraw": "Sedotan",
+  "menuExampleIngredientPlasticBag": "Kantong Plastik",
+  "menuExampleQuantitySmall": "Sedikit",
+  "menuExampleQuantityLarge": "Tambah",
+  "menuExampleQuantityNone": "Tanpa",
+  "menuCatalogEmptyBody": "Kami akan menempatkan 'Produk' serupa ke dalam 'Kategori Produk',\\nagar memesan lebih mudah, contoh:\\n• 'Burger Keju', 'Burger Sayur' dikelompokkan ke 'Burger'\\n• 'Kantong Plastik', 'Botol Minum' dikelompokkan ke 'Lainnya'",
+  "menuCatalogTitleCreate": "Tambah Kategori Produk",
+  "@menuCatalogTitleCreate": {
+    "description": "Deskripsi FloatingActionButton di halaman menu"
+  },
+  "menuCatalogTitleUpdate": "Edit Kategori Produk",
+  "menuCatalogTitleReorder": "Urutkan Kategori Produk",
+  "menuCatalogDialogDeletionContent": "{count, plural, =0{Tidak ada produk di dalamnya} other{Akan menghapus {count} produk}}",
+  "@menuCatalogDialogDeletionContent": {
+    "description": "Pesan peringatan saat menghapus kategori produk di halaman menu",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "menuCatalogNameLabel": "Nama Kategori Produk",
+  "menuCatalogNameHint": "Contoh: Burger",
+  "menuCatalogNameErrorRepeat": "Nama sudah ada, ganti nama lain!",
+  "menuCatalogEmptyProducts": "Belum ada produk",
+  "menuProductHeaderInfo": "Produk",
+  "@menuProductHeaderInfo": {
+    "description": "Ditampilkan di persegi panjang atas beranda"
+  },
+  "menuProductEmptyBody": "'Produk' adalah unit dasar dalam menu, contoh:\\n'Burger Keju', 'Cola'",
+  "menuProductNotSelected": "Pilih kategori produk terlebih dahulu",
+  "@menuProductNotSelected": {
+    "description": "Pesan yang ditampilkan di daftar produk saat kategori belum dipilih"
+  },
+  "menuProductTitleCreate": "Tambah Produk",
+  "menuProductTitleUpdate": "Edit Produk",
+  "menuProductTitleReorder": "Urutkan Produk",
+  "menuProductTitleUpdateImage": "Perbarui Foto",
+  "menuProductMetaTitle": "Produk",
+  "@menuProductMetaTitle": {
+    "description": "Awalan meta, agar tahu ini info produk, bukan kategori"
+  },
+  "menuProductMetaPrice": "Harga: {price}",
+  "@menuProductMetaPrice": {
+    "description": "Harga produk",
+    "placeholders": {
+      "price": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "menuProductMetaCost": "Biaya: {cost}",
+  "@menuProductMetaCost": {
+    "description": "Biaya produk",
+    "placeholders": {
+      "cost": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "menuProductMetaEmpty": "Belum ada bahan",
+  "@menuProductMetaEmpty": {
+    "description": "Teks ditampilkan di subtitle daftar produk"
+  },
+  "menuProductNameLabel": "Nama Produk",
+  "menuProductNameHint": "Contoh: Burger Keju",
+  "menuProductNameErrorRepeat": "Nama produk sudah ada",
+  "menuProductPriceLabel": "Harga Produk",
+  "menuProductPriceHelper": "Harga yang ditampilkan di halaman pesanan",
+  "menuProductCostLabel": "Biaya Produk",
+  "menuProductCostHelper": "Digunakan untuk menghitung keuntungan, seharusnya lebih kecil dari harga",
+  "menuProductEmptyIngredients": "Belum ada bahan",
+  "menuIngredientEmptyBody": "Anda dapat mengatur bahan di produk, contoh:\\n'Burger Keju' memiliki 'Keju', 'Roti Burger' dll.",
+  "menuIngredientTitleCreate": "Tambah Bahan",
+  "menuIngredientTitleUpdate": "Edit Bahan",
+  "menuIngredientTitleReorder": "Urutkan Bahan",
+  "menuIngredientMetaAmount": "Penggunaan: {amount}",
+  "@menuIngredientMetaAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "menuIngredientSearchLabel": "Cari Bahan",
+  "menuIngredientSearchHelper": "Setelah menambah bahan, atur informasi terkait di 'Stok'.",
+  "menuIngredientSearchHint": "Contoh: Keju",
+  "menuIngredientSearchAdd": "Tambah Bahan '{name}'",
+  "@menuIngredientSearchAdd": {
+    "description": "Tombol untuk menambah bahan jika hasil pencarian tidak ditemukan",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "menuIngredientSearchErrorEmpty": "Harus mengatur bahan, klik untuk mengatur.",
+  "menuIngredientSearchErrorRepeat": "Produk sudah memiliki bahan yang sama, tidak bisa dipilih lagi.",
+  "menuIngredientAmountLabel": "Jumlah Penggunaan",
+  "menuIngredientAmountHelper": "Jumlah penggunaan default. Jika produk dapat menyesuaikan jumlah bahan, atur di 'Takaran' bahan.",
+  "menuQuantityTitleCreate": "Tambah Takaran",
+  "menuQuantityTitleUpdate": "Edit",
+  "menuQuantityMetaAmount": "Penggunaan: {amount}",
+  "@menuQuantityMetaAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "menuQuantityMetaAdditionalPrice": "Harga Tambahan: {price}",
+  "@menuQuantityMetaAdditionalPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "menuQuantityMetaAdditionalCost": "Biaya Tambahan: {cost}",
+  "@menuQuantityMetaAdditionalCost": {
+    "placeholders": {
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "menuQuantitySearchLabel": "Cari Takaran",
+  "menuQuantitySearchHelper": "Setelah menambah takaran bahan, atur informasi terkait di 'Takaran'.",
+  "menuQuantitySearchHint": "Contoh: Banyak, Sedikit",
+  "menuQuantitySearchAdd": "Tambah Takaran '{name}'",
+  "@menuQuantitySearchAdd": {
+    "description": "Tombol untuk menambah takaran jika hasil pencarian tidak ditemukan",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "menuQuantitySearchErrorEmpty": "Harus mengatur takaran, klik untuk mengatur.",
+  "menuQuantitySearchErrorRepeat": "Produk sudah memiliki takaran yang sama, tidak bisa dipilih lagi.",
+  "menuQuantityAmountLabel": "Jumlah Penggunaan",
+  "menuQuantityAdditionalPriceLabel": "Harga Tambahan",
+  "menuQuantityAdditionalPriceHelper": "Set ke 0 berarti tambah (kurangi) tanpa biaya tambahan.",
+  "menuQuantityAdditionalCostLabel": "Biaya Tambahan",
+  "menuQuantityAdditionalCostHelper": "Biaya tambahan bisa negatif, seperti 'Sedikit' mengurangi penggunaan bahan, biaya berkurang.",
+  "cashierTab": "Kasir",
+  "cashierUnitLabel": "Denominasi: {unit}",
+  "@cashierUnitLabel": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierCounterLabel": "Jumlah",
+  "@cashierCounterLabel": {
+    "description": "Label saat mengatur jumlah denominasi"
+  },
+  "cashierToDefaultTitle": "Jadikan Default",
+  "cashierToDefaultTutorialTitle": "Status Default Kasir",
+  "cashierToDefaultTutorialContent": "Setelah mengatur jumlah setiap denominasi di bawah,\\ntekan di sini untuk mengatur status default!\\nJumlah yang diatur akan menjadi 'maksimum' untuk setiap denominasi.",
+  "cashierToDefaultDialogTitle": "Atur Default Kasir?",
+  "cashierToDefaultDialogContent": "Ini akan mengatur status kasir saat ini sebagai status default.\\nTindakan ini akan menimpa pengaturan sebelumnya.",
+  "cashierChangerTitle": "Tukar Uang",
+  "cashierChangerButton": "Terapkan",
+  "cashierChangerTutorialTitle": "Tukar Uang Kasir",
+  "cashierChangerTutorialContent": "Seratus ribu ditukar jadi sepuluh sepuluh ribuan, dll.\\nMembantu menyesuaikan status kasir dengan cepat.",
+  "cashierChangerErrorNoSelection": "Pilih kombinasi yang akan diterapkan",
+  "cashierChangerErrorNotEnough": "Uang {unit} tidak cukup untuk ditukar",
+  "@cashierChangerErrorNotEnough": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierChangerErrorInvalidHead": "{count} lembar {unit} tidak bisa ditukar",
+  "@cashierChangerErrorInvalidHead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierChangerErrorInvalidBody": "{count} lembar {unit}",
+  "@cashierChangerErrorInvalidBody": {
+    "description": "Digabungkan beberapa baris setelah `invalidHead`",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierChangerFavoriteTab": "Favorit",
+  "cashierChangerFavoriteHint": "Setelah memilih, klik 'Terapkan' untuk menggunakan kombinasi",
+  "cashierChangerFavoriteEmptyBody": "Di sini dapat membantu menukar denominasi dengan cepat",
+  "cashierChangerFavoriteItemFrom": "Tukar {count} lembar {unit}",
+  "@cashierChangerFavoriteItemFrom": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierChangerFavoriteItemTo": "menjadi {count} lembar {unit}",
+  "@cashierChangerFavoriteItemTo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierChangerCustomTab": "Kustom",
+  "cashierChangerCustomAddBtn": "Tambah Favorit",
+  "cashierChangerCustomCountLabel": "Jumlah",
+  "cashierChangerCustomUnitLabel": "Denominasi",
+  "cashierChangerCustomUnitAddBtn": "Tambah Denominasi",
+  "cashierChangerCustomDividerFrom": "Ambil",
+  "cashierChangerCustomDividerTo": "Tukar",
+  "cashierSurplusTitle": "Saldo",
+  "cashierSurplusButton": "Saldo",
+  "cashierSurplusTutorialTitle": "Saldo Harian",
+  "cashierSurplusTutorialContent": "Saldo membantu saat tutup toko setiap hari,\\nmenghitung selisih antara jumlah uang saat ini dan jumlah default.",
+  "cashierSurplusErrorEmptyDefault": "Belum mengatur status default",
+  "cashierSurplusTableHint": "Jika Anda yakin uang di kasir sudah benar, maka saldo dapat diselesaikan!",
+  "cashierSurplusColumnName": "{name, select, unit{Denominasi} currentCount{Saat Ini} diffCount{Selisih} defaultCount{Default} other{UNKNOWN}}",
+  "cashierSurplusCounterLabel": "Jumlah denominasi {unit}",
+  "@cashierSurplusCounterLabel": {
+    "description": "Memungkinkan pengguna menyesuaikan denominasi saat saldo.",
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "cashierSurplusCounterShortLabel": "Jumlah",
+  "@cashierSurplusCounterShortLabel": {
+    "description": "Untuk ditampilkan di pesan error, misal 'Jumlah tidak boleh 0'."
+  },
+  "cashierSurplusCurrentTotalLabel": "Total Saat Ini",
+  "cashierSurplusCurrentTotalHelper": "Total yang seharusnya ada di kasir sekarang.\\nJika jumlah uang tunai tidak cocok, pikirkan apakah uang kasir digunakan untuk belanja hari ini?",
+  "cashierSurplusDiffTotalLabel": "Selisih",
+  "cashierSurplusDiffTotalHelper": "Selisih dengan total awal kasir.\\nIni membantu mengetahui berapa banyak uang yang bertambah hari ini.",
+  "orderTitle": "Pesan",
+  "orderBtn": "Pesan",
+  "orderTutorialTitle": "Mulai Memesan!",
+  "orderTutorialContent": "Setelah menu diatur, Anda dapat mulai memesan\\nAyo lihat apa saja yang ada!\\n",
+  "orderTutorialPrinterBtnTitle": "Perubahan Printer",
+  "orderTutorialPrinterBtnContent": "Status printer berubah, silakan periksa.",
+  "orderSnackbarPrinterConnected": "Printer berhasil terhubung: {names}",
+  "@orderSnackbarPrinterConnected": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "orderSnackbarPrinterDisconnected": "Printer '{name}' terputus",
+  "@orderSnackbarPrinterDisconnected": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "orderSnackbarCashierNotEnough": "Uang kasir tidak cukup untuk memberi kembalian!",
+  "orderSnackbarCashierUsingSmallMoney": "Kasir menggunakan uang kecil untuk memberi kembalian",
+  "orderSnackbarCashierUsingSmallMoneyHelper": "Pesan ini muncul saat kasir tidak dapat menggunakan uang yang paling tepat untuk memberi kembalian.\\n\\nContoh, harga '65.000', pelanggan bayar '100.000', seharusnya kembalian '35.000'\\nJika kasir hanya memiliki dua lembar 10.000, dan lebih dari tiga lembar 5.000, pesan ini akan muncul.\\n\\nCara menghindari:\\n• Pergi ke halaman Tukar Uang untuk melengkapi denominasi.\\n• Pergi ke [halaman Pengaturan]({link}) untuk menonaktifkan peringatan terkait kasir.",
+  "@orderSnackbarCashierUsingSmallMoneyHelper": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "orderActionCheckout": "Bayar",
+  "@orderActionCheckout": {
+    "description": "Lanjut ke langkah berikutnya setelah mengonfirmasi item di keranjang"
+  },
+  "orderActionExchange": "Tukar Uang",
+  "orderActionStash": "Simpan Sementara",
+  "orderActionReview": "Riwayat Pesanan",
+  "orderLoaderMetaTotalRevenue": "Total Pendapatan: {revenue}",
+  "@orderLoaderMetaTotalRevenue": {
+    "description": "Total pendapatan dari pesanan di daftar pesanan",
+    "placeholders": {
+      "revenue": {
+        "type": "String"
+      }
+    }
+  },
+  "orderLoaderMetaTotalCost": "Total Biaya: {cost}",
+  "@orderLoaderMetaTotalCost": {
+    "description": "Total biaya dari pesanan di daftar pesanan",
+    "placeholders": {
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "orderLoaderMetaTotalCount": "Total: {count}",
+  "@orderLoaderMetaTotalCount": {
+    "description": "Jumlah total pesanan di daftar pesanan",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "orderLoaderEmpty": "Tidak ada riwayat pesanan",
+  "orderCatalogListEmpty": "Belum ada kategori produk",
+  "orderProductListViewHelper": "{name, select, grid{Gambar} list{Daftar} other{UNKNOWN}}",
+  "@orderProductListViewHelper": {
+    "description": "Mode tampilan daftar produk"
+  },
+  "orderProductListNoIngredient": "Tanpa bahan",
+  "orderPrinterEmpty": "Belum ada printer",
+  "orderPrinterDividerUnused": "Tidak digunakan",
+  "orderPrinterDividerConnecting": "Menghubungkan",
+  "orderPrinterDividerConnected": "Terhubung",
+  "orderPrinterErrorCreateReceipt": "Tidak dapat membuat data struk",
+  "orderCartActionBulk": "Operasi Massal",
+  "orderCartActionToggle": "Balik Pilihan",
+  "orderCartActionSelectAll": "Pilih Semua",
+  "orderCartActionDiscount": "Diskon",
+  "orderCartActionDiscountLabel": "Diskon",
+  "orderCartActionDiscountHint": "Contoh: 50, berarti diskon 50% (setengah harga)",
+  "orderCartActionDiscountHelper": "Angka di sini adalah 'persen', 85 berarti diskon 15%, total harga dikali 0.85. Jika perlu harga pasti, gunakan 'Ubah Harga'.",
+  "orderCartActionDiscountSuffix": "%",
+  "orderCartActionChangePrice": "Ubah Harga",
+  "orderCartActionChangePriceLabel": "Harga",
+  "orderCartActionChangePriceHint": "Harga per produk",
+  "orderCartActionChangePricePrefix": "Rp",
+  "orderCartActionChangePriceSuffix": "",
+  "orderCartActionChangeCount": "Ubah Jumlah",
+  "orderCartActionChangeCountLabel": "Jumlah",
+  "orderCartActionChangeCountHint": "Jumlah produk",
+  "orderCartActionChangeCountSuffix": "pcs",
+  "orderCartActionFree": "Gratis",
+  "orderCartActionDelete": "Hapus",
+  "orderCartSnapshotEmpty": "Belum ada pesanan",
+  "orderCartMetaTotalPrice": "Total: {price}",
+  "@orderCartMetaTotalPrice": {
+    "description": "Total harga item di keranjang",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCartMetaTotalCount": "Jumlah: {count}",
+  "@orderCartMetaTotalCount": {
+    "description": "Jumlah total item di keranjang",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "compact"
+      }
+    }
+  },
+  "orderCartProductPrice": "{price, select, 0{Gratis} other{Rp{price}}}",
+  "@orderCartProductPrice": {
+    "description": "Harga produk",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCartProductIncrease": "Tambah Satu",
+  "orderCartProductDefaultQuantity": "Takaran Default",
+  "orderCartProductIngredient": "{name} ({quantity})",
+  "@orderCartProductIngredient": {
+    "description": "Bahan dan jumlah setiap item dalam daftar produk saat memesan",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "quantity": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCartIngredientStatus": "{status, select, emptyCart{Pilih produk untuk mengatur bahannya} differentProducts{Pilih produk yang sama untuk mengatur bahannya} noNeedIngredient{Produk ini tidak memiliki bahan yang dapat diatur} other{UNKNOWN}}",
+  "@orderCartIngredientStatus": {
+    "description": "Pengingat saat memesan jika produk tidak memerlukan pengaturan bahan",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCartQuantityNotAble": "Pilih bahan untuk mengatur takaran",
+  "@orderCartQuantityNotAble": {
+    "description": "Saat memesan, pilih bahan untuk mengatur takaran"
+  },
+  "orderCartQuantityLabel": "{name} ({amount})",
+  "@orderCartQuantityLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "orderCartQuantityDefaultLabel": "Default ({amount})",
+  "@orderCartQuantityDefaultLabel": {
+    "description": "Saat mengatur bahan, takaran dapat disesuaikan atau diatur ke default",
+    "placeholders": {
+      "amount": {
+        "type": "num",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "orderCheckoutEmptyCart": "Harap lakukan pemesanan terlebih dahulu.",
+  "orderCheckoutActionStash": "Simpan",
+  "orderCheckoutActionConfirm": "Konfirmasi",
+  "orderCheckoutStashTab": "Tersimpan",
+  "orderCheckoutStashEmpty": "Tidak ada pesanan tersimpan.",
+  "orderCheckoutStashNoProducts": "Tidak ada produk",
+  "orderCheckoutStashActionCheckout": "Bayar",
+  "orderCheckoutStashActionRestore": "Pulihkan",
+  "orderCheckoutStashDialogCalculator": "Kalkulator Pembayaran",
+  "orderCheckoutStashDialogRestoreTitle": "Pulihkan Pesanan Tersimpan",
+  "orderCheckoutStashDialogRestoreContent": "Tindakan ini akan menimpa pesanan yang ada di keranjang.",
+  "orderCheckoutStashDialogDeleteName": "Pesanan",
+  "orderCheckoutAttributeTab": "Pengaturan Pelanggan",
+  "orderCheckoutAttributeNoteTitle": "Catatan",
+  "orderCheckoutAttributeNoteHint": "Beberapa catatan tentang pesanan ini",
+  "orderCheckoutDetailsTab": "Detail Pesanan",
+  "orderCheckoutDetailsCalculatorLabelPaid": "Dibayar",
+  "orderCheckoutDetailsCalculatorLabelChange": "Kembalian",
+  "orderCheckoutDetailsSnapshotLabelChange": "Kembalian: {change}",
+  "@orderCheckoutDetailsSnapshotLabelChange": {
+    "description": "Kembalian yang diberikan kasir setelah pembayaran",
+    "placeholders": {
+      "change": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCheckoutSnackbarPaidFailed": "Jumlah dibayar kurang dari total pesanan, tidak dapat checkout.",
+  "orderObjectViewEmpty": "Tidak ada riwayat pesanan",
+  "orderObjectViewChange": "Kembalian",
+  "orderObjectViewPriceTotal": "Total Pesanan: {price}",
+  "@orderObjectViewPriceTotal": {
+    "description": "Informasi total harga setelah memesan",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "orderObjectViewPriceProducts": "Total Produk",
+  "orderObjectViewPriceAttributes": "Total Pengaturan Pelanggan",
+  "orderObjectViewCost": "Biaya",
+  "orderObjectViewProfit": "Keuntungan Bersih",
+  "orderObjectViewPaid": "Dibayar",
+  "orderObjectViewNote": "Catatan",
+  "orderObjectViewDividerAttribute": "Pengaturan Pelanggan",
+  "orderObjectViewDividerProduct": "Informasi Produk",
+  "orderObjectViewProductPrice": "Total",
+  "orderObjectViewProductCost": "Total Biaya",
+  "orderObjectViewProductCount": "Jumlah",
+  "orderObjectViewProductSinglePrice": "Harga Satuan",
+  "orderObjectViewProductOriginalPrice": "Harga Sebelum Diskon",
+  "orderObjectViewProductCatalog": "Kategori Produk",
+  "orderObjectViewProductIngredient": "Bahan",
+  "orderObjectViewProductDefaultQuantity": "Default",
+  "analysisTab": "Statistik",
+  "analysisHistoryBtn": "Riwayat",
+  "analysisHistoryTitle": "Riwayat Pesanan",
+  "analysisHistoryTitleEmpty": "Tidak ada riwayat pesanan",
+  "analysisHistoryCalendarTutorialTitle": "Kalender",
+  "analysisHistoryCalendarTutorialContent": "Geser atas/bawah untuk mengubah unit periode (bulan/minggu).\\nGeser kiri/kanan untuk mengubah rentang tanggal.",
+  "analysisHistoryActionExport": "Ekspor",
+  "analysisHistoryActionClear": "Hapus Riwayat Pesanan",
+  "analysisHistoryActionClearLastYear": "Hapus pesanan sebelum tahun lalu",
+  "analysisHistoryActionClearLast6Months": "Hapus pesanan sebelum 6 bulan lalu",
+  "analysisHistoryActionClearCustom": "Hapus pesanan sebelum tanggal tertentu",
+  "analysisHistoryActionClearCustomSubtitle": "Klik untuk pilih tanggal",
+  "analysisHistoryActionClearSubtitle": "Sebelum {date} pukul 00:00",
+  "@analysisHistoryActionClearSubtitle": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "analysisHistoryActionClearConfirmTitle": "Yakin ingin menghapus pesanan?",
+  "analysisHistoryActionClearConfirmContent": "Yakin ingin menghapus pesanan sebelum {date} pukul 00:00?\\nTindakan ini akan menghapus {count} pesanan.",
+  "@analysisHistoryActionClearConfirmContent": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      },
+      "count": {
+        "type": "int",
+        "format": "compactLong"
+      }
+    }
+  },
+  "analysisHistoryActionResetNo": "Reset Nomor Pesanan",
+  "analysisHistoryActionResetNoHint": "Setelah direset, nomor akan dimulai dari 1. Riwayat pesanan tetap mempertahankan nomor aslinya.",
+  "analysisHistoryActionScheduleResetNo": "Reset Otomatis Terjadwal",
+  "analysisHistoryActionScheduleResetNoPeriod": "{name, select, everyXDays{Setiap X hari} everyXWeeks{Setiap X minggu} xDayOfEachWeek{Setiap hari X dalam seminggu} xDayOfEachMonth{Setiap tanggal X tiap bulan} other{UNKNOWN}}",
+  "analysisHistoryActionScheduleResetNoTitle": "Jadwalkan Reset Nomor Pesanan",
+  "analysisHistoryActionScheduleResetNoHint": "Pilih interval untuk menjadwalkan reset nomor pesanan di masa depan.",
+  "analysisHistoryActionScheduleResetNoNext": "Reset berikutnya: {date}",
+  "@analysisHistoryActionScheduleResetNoNext": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "analysisHistoryActionScheduleResetNoWeekday": "{day}",
+  "@analysisHistoryActionScheduleResetNoWeekday": {
+    "placeholders": {
+      "day": {
+        "type": "DateTime",
+        "format": "EEEE"
+      }
+    }
+  },
+  "analysisHistoryActionScheduleResetNoMonthDay": "Tanggal {day}",
+  "analysisHistoryActionScheduleResetNoMonthDayHint": "Jika memilih tanggal 31, secara otomatis akan disesuaikan ke hari terakhir bulan (Februari, April, dll.)",
+  "analysisHistoryActionScheduleResetNoDaysEmpty": "Tidak ada",
+  "analysisHistoryActionScheduleResetNoErrorDaysEmpty": "Pilih setidaknya satu hari",
+  "analysisHistoryActionTutorialTitle": "Lakukan lebih banyak dengan pesanan",
+  "analysisHistoryActionTutorialContent": "Anda dapat mengekspor pesanan ke file eksternal untuk analisis atau cadangan,\\nmenghapus pesanan sebelum tanggal tertentu,\\natau menjadwalkan reset nomor pesanan otomatis.",
+  "analysisHistoryOrderListMetaNo": "No: {no}",
+  "@analysisHistoryOrderListMetaNo": {
+    "description": "ID pesanan tertentu dalam daftar pesanan.",
+    "placeholders": {
+      "no": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisHistoryOrderListMetaPrice": "Harga: {price}",
+  "@analysisHistoryOrderListMetaPrice": {
+    "description": "Harga pesanan tertentu dalam daftar pesanan.",
+    "placeholders": {
+      "price": {
+        "type": "num",
+        "format": "compactCurrency",
+        "optionalParameters": {
+          "symbol": "Rp"
+        }
+      }
+    }
+  },
+  "analysisHistoryOrderListMetaPaid": "Dibayar: {paid}",
+  "@analysisHistoryOrderListMetaPaid": {
+    "description": "Jumlah pembayaran pesanan tertentu dalam daftar pesanan.",
+    "placeholders": {
+      "paid": {
+        "type": "num",
+        "format": "compactCurrency",
+        "optionalParameters": {
+          "symbol": "Rp"
+        }
+      }
+    }
+  },
+  "analysisHistoryOrderListMetaProfit": "Keuntungan Bersih: {profit}",
+  "@analysisHistoryOrderListMetaProfit": {
+    "description": "Keuntungan bersih pesanan tertentu dalam daftar pesanan.",
+    "placeholders": {
+      "profit": {
+        "type": "num",
+        "format": "compactCurrency",
+        "optionalParameters": {
+          "symbol": "Rp"
+        }
+      }
+    }
+  },
+  "analysisHistoryOrderTitle": "Detail Pesanan",
+  "analysisHistoryOrderNotFound": "Pesanan tidak ditemukan",
+  "analysisHistoryOrderDeleteDialog": "Yakin ingin menghapus pesanan {name}?\\nData kasir dan stok tidak akan dikembalikan.\\nTindakan ini tidak dapat dibatalkan.",
+  "@analysisHistoryOrderDeleteDialog": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisGoalsTitle": "Ringkasan Hari Ini",
+  "analysisGoalsCountTitle": "Jumlah Pesanan",
+  "analysisGoalsCountDescription": "Jumlah pesanan mencerminkan daya tarik produk terhadap pelanggan.\\nIni mewakili tingkat permintaan pasar terhadap produk Anda, membantu memahami produk atau waktu mana yang paling populer.\\nJumlah pesanan tinggi mungkin menandakan strategi harga atau promosi yang berhasil.\\nTapi perlu diingat, mengejar jumlah pesanan tinggi saja mungkin mengabaikan profitabilitas.",
+  "analysisGoalsRevenueTitle": "Pendapatan",
+  "analysisGoalsRevenueDescription": "Pendapatan mewakili total penjualan, indikator skala bisnis.\\nPendapatan tinggi menunjukkan produk Anda populer dan laku, tapi pendapatan tidak mencerminkan keberlanjutan dan profitabilitas bisnis.\\nTerkadang, perusahaan mungkin menurunkan harga untuk meningkatkan pendapatan, yang dapat mempengaruhi profitabilitas.",
+  "analysisGoalsProfitTitle": "Keuntungan Bersih",
+  "analysisGoalsProfitDescription": "Keuntungan bersih adalah sisa setelah pendapatan dikurangi biaya, kunci keberlanjutan bisnis.\\nKeuntungan langsung mencerminkan efisiensi operasional dan manajemen biaya.\\nBerbeda dengan pendapatan, keuntungan mempertimbangkan pengeluaran bisnis, termasuk bahan baku, tenaga kerja, sewa, dll.\\nIni adalah indikator yang lebih realistis untuk mengevaluasi efektivitas dan keberlanjutan operasi.",
+  "analysisGoalsCostTitle": "Biaya",
+  "analysisGoalsAchievedRate": "Pencapaian Laba\\n{rate}",
+  "@analysisGoalsAchievedRate": {
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisChartTitle": "Analisis Grafik",
+  "analysisChartTitleCreate": "Tambah Grafik",
+  "analysisChartTitleUpdate": "Edit Grafik",
+  "analysisChartTitleReorder": "Urutkan Grafik",
+  "analysisChartTutorialTitle": "Analisis Grafik",
+  "analysisChartTutorialContent": "Dengan grafik, Anda dapat melihat perubahan data secara lebih visual.\\nMulai sekarang, buat grafik untuk melacak penjualan Anda!",
+  "analysisChartCardEmptyData": "Tidak ada data",
+  "analysisChartCardTitleUpdate": "Edit Grafik",
+  "analysisChartMetricName": "{name, select, revenue{Pendapatan} cost{Biaya} profit{Keuntungan} count{Jumlah} other{UNKNOWN}}",
+  "@analysisChartMetricName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisChartTargetName": "{name, select, order{Pesanan} catalog{Kategori Produk} product{Produk} ingredient{Bahan} attribute{Atribut Pelanggan} other{UNKNOWN}}",
+  "@analysisChartTargetName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisChartRangeYesterday": "Kemarin",
+  "analysisChartRangeToday": "Hari Ini",
+  "analysisChartRangeLastWeek": "Minggu Lalu",
+  "analysisChartRangeThisWeek": "Minggu Ini",
+  "analysisChartRangeLast7Days": "7 Hari Terakhir",
+  "analysisChartRangeLastMonth": "Bulan Lalu",
+  "analysisChartRangeThisMonth": "Bulan Ini",
+  "analysisChartRangeLast30Days": "30 Hari Terakhir",
+  "analysisChartRangeTabName": "{name, select, day{Tanggal} week{Minggu} month{Bulan} custom{Kustom} other{UNKNOWN}}",
+  "@analysisChartRangeTabName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisChartModalNameLabel": "Nama Grafik",
+  "analysisChartModalNameHint": "Contoh: Pendapatan Harian",
+  "analysisChartModalIgnoreEmptyLabel": "Abaikan Data Kosong",
+  "analysisChartModalIgnoreEmptyHelper": "Jika produk atau indikator tidak memiliki data dalam periode waktu tersebut, tidak ditampilkan.",
+  "analysisChartModalDivider": "Pengaturan Data",
+  "analysisChartModalTypeLabel": "Jenis Grafik",
+  "analysisChartModalTypeName": "{name, select, cartesian{Grafik Waktu} circular{Diagram Lingkaran} other{UNKNOWN}}",
+  "@analysisChartModalTypeName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "analysisChartModalMetricLabel": "Indikator",
+  "analysisChartModalMetricHelper": "Pilih jenis indikator yang berbeda sesuai tujuan.",
+  "analysisChartModalTargetLabel": "Jenis Item",
+  "analysisChartModalTargetHelper": "Pilih informasi mana yang akan dianalisis dalam grafik.",
+  "analysisChartModalTargetErrorEmpty": "Pilih satu jenis item",
+  "analysisChartModalTargetItemLabel": "Pilihan Item",
+  "analysisChartModalTargetItemHelper": "Item mana yang ingin Anda amati perubahannya, misalnya jumlah produk tertentu dalam rentang waktu.",
+  "analysisChartModalTargetItemSelectAll": "Pilih Semua"
+}
