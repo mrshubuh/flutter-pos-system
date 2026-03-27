@@ -22,7 +22,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0' # Gunakan versi stabil yang umum atau sesuaikan dengan project Anda
+          flutter-version: '3.35.0' # Gunakan versi stabil yang umum atau sesuaikan dengan project Anda
           channel: 'stable'
       
       - name: Get dependencies
