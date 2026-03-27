@@ -35,8 +35,20 @@ jobs:
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
-          # Perbaikan: Menggunakan Python untuk decode yang lebih bersih
-          python3 -c "import base64; import os; data = os.environ['KEYSTORE_BASE64'].strip(); with open('android/app/release.keystore', 'wb') as f: f.write(base64.b64decode(data))"
+          # Membuat script python terpisah agar aman dari error kutip
+          cat <<EOF > decode_keystore.py
+          import base64
+          import os
+          try:
+              data = os.environ.get('KEYSTORE_BASE64', '').strip()
+              with open('android/app/release.keystore', 'wb') as f:
+                  f.write(base64.b64decode(data))
+              print("Keystore decoded successfully")
+          except Exception as e:
+              print(f"Error decoding keystore: {e}")
+              exit(1)
+          EOF
+          python3 decode_keystore.py
       
       - name: Create key.properties
         run: |
