@@ -1,4 +1,4 @@
-name: Build Android APK (Signed)
+name: Build Android APK
 
 on:
   push:
@@ -13,12 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-      
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -31,37 +25,14 @@ jobs:
       - name: Generate localizations
         run: flutter gen-l10n
       
-      - name: Decode Keystore
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-        run: |
-          # Membuat script python terpisah agar aman dari error kutip
-          cat <<EOF > decode_keystore.py
-          import base64
-          import os
-          try:
-              data = os.environ.get('KEYSTORE_BASE64', '').strip()
-              with open('android/app/release.keystore', 'wb') as f:
-                  f.write(base64.b64decode(data))
-              print("Keystore decoded successfully")
-          except Exception as e:
-              print(f"Error decoding keystore: {e}")
-              exit(1)
-          EOF
-          python3 decode_keystore.py
-      
-      - name: Create key.properties
-        run: |
-          echo "storeFile=release.keystore" > android/key.properties
-          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" >> android/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
+      - name: Clean build
+        run: flutter clean
       
       - name: Build APK
-        run: flutter build apk --release
+        run: flutter build apk --release --verbose
       
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: signed-release-apk
+          name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
